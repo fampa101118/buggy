@@ -26,7 +26,7 @@ body{
 
 .item1{ 
   /*background-color: */
-  background: url(cover5.jpg) ;
+  /*background: url(cover5.jpg) ;*/
   /*padding: 90px;*/
   background-size: cover;
   background-position: center;
@@ -72,10 +72,10 @@ body{
   width: 50px;
   animation: flipInX 2s infinite;
   /*height:200px;*/
-/*  left:400px;
-  position: absolute;
-  bottom:40px;*/
+  position: sticky;
 }
+
+
 
 .container{  left:457px;
   position: sticky;
@@ -126,6 +126,11 @@ a{
 /*.xyz{
 	position: absolute;
 }*/
+
+.png2{
+  display:none;
+}
+
 
 .BUGGY {
   
@@ -178,23 +183,136 @@ body > .item2{
 
 
 
+/***** mobile *****/
+
+@media only screen and (max-width: 700px) {
+
+    html {
+      
+    }
+
+
+    body{
+    margin: auto 0;
+    background-size: cover;
+    font-size:2em;
+    
+    width:100%;
+    min-height: 70vh;
+    background-color: rgba(33,34,35,255);
+
+    }
+
+
+    .item1{ 
+ 
+      /*background: url(cover5.jpg) ;*/
+      background-size: cover;
+      background-position: center;
+      object-fit:cover;
+      /*padding-top: 1px;*/
+      width: 100%;
+      height: 141px;
+
+
+    }
+
+  .insta {
+    display: inline-block;
+    margin: 0 0.5rem;
+
+    animation: flipInX; 
+    animation-duration: 2s;  
+    height:50px;
+    width: 50px;
+    animation: flipInX 2s infinite;
+    position: sticky;
+    margin-top: 100px;
+
+  }
 
 
 
+  .xyz {
+
+    display:none;
+  }
+
+  .png2 {
+    width:95%;
+    height: auto;
+    display:grid;
+  }
+
+  .BUGGY {
+    
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(83.9, 2.4, 2.4));
+    font-size: 28px;
+    align-self: baseline;
+    text-align: center;
+  }
+  .BUGGY span {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color: #F51313;
+    text-transform: uppercase;
+    animation: BUGGY 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+    vertical-align: top;
+     /*well by doing this my buggydclown gets up there but dontkno*/
+    
+  }
+  @keyframes BUGGY {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
 
 
+  .hellow{
 
+    margin:00px;
+  }
 
+  .container{  left:457px;
+    position: sticky;
+    bottom:40px;
+    top:1600px;
+    bottom:0px;
+  }
 
+  nav{
+    left:40px;
+    width:70%;
+    margin-left: 142px;
+  }
 
+  ul {
+    background-color: #000096;
+  }
+  a{
+    color: #FFFF1D;
+    margin:44px;
+    text-decoration:none;
+    list-style: none;
+  }
 
-/*
-@media only screen and (max-width: 797px) {
-    .hello {
-        font-size: 0.5em;
-        padding: 0;
-    } 
-}*/
+  .text{
+
+    display : none ;
+  }  
+  /*.item2 {
+      background-size: cover;
+      background-position: center;
+      object-fit:cover;
+      width:100%;
+  }*/
+    
+}
 
 
 
@@ -203,86 +321,4 @@ body > .item2{
 
 
 
-/* ----------- Galaxy S3 ----------- */
 
-/* Portrait and Landscape */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-@media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 2) 
-  and (orientation: portrait) {
-
-}
-
-/* Landscape */
-@media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 2) 
-  and (orientation: landscape) {
-
-}
-
-/* ----------- Galaxy S4, S5 and Note 3 ----------- */
-
-/* Portrait and Landscape */
-@media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) {
-
-}
-
-/* Portrait */
-@media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: portrait) {
-
-}
-
-/* Landscape */
-@media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: landscape) {
-
-}
-
-/* ----------- Galaxy S6 ----------- */
-
-/* Portrait and Landscape */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 4) {
-
-}
-
-/* Portrait */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 4) 
-  and (orientation: portrait) {
-
-}
-
-/* Landscape */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 4) 
-  and (orientation: landscape) {
-
-}
