@@ -178,7 +178,9 @@ body > .item2{
 }
 
 
-
+.abc{
+  display: none;
+}
 
 
 
@@ -228,8 +230,10 @@ body > .item2{
     height:50px;
     width: 50px;
     animation: flipInX 2s infinite;
-    position: sticky;
-    margin-top: 250px;
+    position: relative;
+    /*margin-top: 250px;*/
+    bottom:-136px;
+    padding: 25px;
 
   }
 
@@ -237,6 +241,12 @@ body > .item2{
     height:50px;
     width:50px;
   }*/
+
+  #chapter td, #chapter th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
 
   .xyz {
 
@@ -247,7 +257,9 @@ body > .item2{
     width:95%;
     height: auto;
     display:grid;
-    margin-top: 100px;
+    /*margin-top: 100px;*/
+    position: relative;
+    bottom: -96px;
   }
 
   .BUGGY {
@@ -311,21 +323,12 @@ body > .item2{
 
     display : none ;
   }  
-  /*.item2 {
-      background-size: cover;
-      background-position: center;
-      object-fit:cover;
-      width:100%;
-  }*/
-    
-}
-
-
-
-
-/*media queries allow us to create responsive websites and tell our web pages what to do when the sixe of our screen */
-
-
+  
+  .abc{
+    display: grid;
+    position: relative;
+    top: -241px;
+  }
 
 
     
@@ -335,7 +338,6 @@ body > .item2{
 
 
 /*media queries allow us to create responsive websites and tell our web pages what to do when the sixe of our screen */
-
 
 
 
