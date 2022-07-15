@@ -66,11 +66,11 @@ body{
   display: inline-block;
   margin: 0 0.5rem;
 
-  animation: flipInX; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s;  /* don't forget to set a duration! */
+  /*animation: flipInX;*/ /* referring directly to the animation's @keyframe declaration */
+  /*animation-duration: 2s;*/  /* don't forget to set a duration! */
   height:50px;
   width: 50px;
-  animation: flipInX 2s infinite;
+  /*animation: flipInX 2s infinite;*/
   /*height:200px;*/
   position: sticky;
 }
@@ -90,10 +90,10 @@ nav{
   margin-left: 142px;
 }
 
-ul {
+.box ul {
   background-color: #000096;
 }
-a{
+.box a{
   color: #FFFF1D;
   margin:44px;
   text-decoration:none;
@@ -183,6 +183,57 @@ body > .item2{
 }
 
 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.icon{
+  /*height: 146px;
+  position:relative;
+  top: -225px;*/
+  display: none;
+}
+
+
+.icon1{
+   /* height: 84px;
+    position: relative;
+    top: -37px;
+    left: 64px;
+*/
+   display:none;
+}
+
 
 
 /***** mobile *****/
@@ -224,12 +275,11 @@ body > .item2{
   .insta {
     display: inline-block;
     margin: 0 0.5rem;
-
-    animation: flipInX; 
-    animation-duration: 2s;  
+    /*animation: flipInX; */
+    /*animation-duration: 2s;  */
     height:50px;
     width: 50px;
-    animation: flipInX 2s infinite;
+    /*animation: flipInX 2s infinite;*/
     position: relative;
     /*margin-top: 250px;*/
     bottom:-136px;
@@ -280,6 +330,7 @@ body > .item2{
     vertical-align: top;
      /*well by doing this my buggydclown gets up there but dontkno*/
     
+    
   }
   @keyframes BUGGY {
     0%,40%,100% {
@@ -309,10 +360,10 @@ body > .item2{
     margin-left: 142px;
   }
 
-  ul {
+ /* ul {
     background-color: #000096;
-  }
-  a{
+  }*/
+  .box a{
     color: #FFFF1D;
     margin:44px;
     text-decoration:none;
@@ -331,8 +382,58 @@ body > .item2{
   }
 
 
-    
+  .icon{
+    display: grid;
+    height: 97px;
+    position:relative;
+    top: -145px;
+  
+  }
+
+
+  .icon1{
+    display: grid;
+    height: 84px;
+    position: relative;
+    top: 7px;
+    left: 24px;
+
+   
+  }
+   
+   /*a{margin:10px;}*/
+   .sidenave ul{
+
+    background-color: none;
+   }
+  
+    li {
+      margin:10px;
+      background-color: yellow;
+    }
+
+    .abc a{
+      color: black
+      /*opacity:100;*/
+    }
+
+    th{
+     background-color: yellow;
+     opacity: 0.7;
+    }
+
+    /*td{
+      background-color: red;
+      opacity: 0.5;
+    }*/
+    td{
+      background-color: red;
+      /*opacity:0.5;*/
+    }
+
+
 }
+
 
 
 
