@@ -383,7 +383,7 @@ body > .item2{
 
 
   .icon{
-    display: grid;
+    display: inline-block;
     height: 97px;
     position:relative;
     top: -145px;
@@ -412,14 +412,15 @@ body > .item2{
       background-color: yellow;
     }
 
-    .abc a{
-      color: black
-      /*opacity:100;*/
-    }
+    
 
     th{
-     background-color: yellow;
-     opacity: 0.7;
+     background-color:  rgb(255,255,0,0.75);
+     /*opacity: 0.7;*/
+    }
+
+    .abc p{
+      color:  rgb(0,0,0,1);
     }
 
     /*td{
@@ -428,7 +429,15 @@ body > .item2{
     }*/
     td{
       background-color: red;
-      /*opacity:0.5;*/
+      background: rgba(100%, 0%, 0%, 0.45);
+      border-radius:15px;
+    }
+
+
+    .abc a{
+      color:  rgb(255,255,0,1);
+      opacity:1 !important; 
+      text-decoration: none;
     }
 
 
