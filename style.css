@@ -273,14 +273,14 @@ body > .item2{
     }
 
   .insta {
-    display: inline-block;
+    display:grid;
     margin: 0 0.5rem;
     /*animation: flipInX; */
     /*animation-duration: 2s;  */
     height:50px;
     width: 50px;
     /*animation: flipInX 2s infinite;*/
-    position: relative;
+    /*position: relative;*/
     /*margin-top: 250px;*/
     bottom:-136px;
     padding: 25px;
@@ -352,6 +352,7 @@ body > .item2{
     bottom:40px;
     top:1600px;
     bottom:0px;
+    background-color: yellow;
   }
 
   nav{
@@ -440,10 +441,35 @@ body > .item2{
       text-decoration: none;
     }
 
+    .item2{
+          height: 136vh;
+    }
+
+    .container{
+    /*overflow: inherit;*/
+    /*position: ;*/
+    /* bottom: -32px; */
+    /*height: 242px;*/  
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 71px; 
+    }
+
+    .container p{ 
+       padding:10px;
+       text-align: center;
+       font-family:  sans-serif;
+
+     }
+       
+
+     .container h9{  
+       font-family: "Sofia", sans-serif;
+
+     } 
+   
 
 }
-
-
 
 
 
