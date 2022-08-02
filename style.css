@@ -235,6 +235,9 @@ body > .item2{
 }
 
 
+.gif{
+  display:none;
+}
 
 /***** mobile *****/
 
@@ -287,6 +290,7 @@ body > .item2{
 
   }
 
+
  /* .pointer{
     height:50px;
     width:50px;
@@ -309,7 +313,7 @@ body > .item2{
     display:grid;
     /*margin-top: 100px;*/
     position: relative;
-    bottom: -96px;
+    bottom: -292px;
   }
 
   .BUGGY {
@@ -418,6 +422,8 @@ body > .item2{
     th{
      background-color:  rgb(255,255,0);
      box-shadow: inset 0 0 50px grey;
+      /*border-collapse: collapse;*/
+     height: 70px;
      /*opacity: 0.7;*/
     }
 
@@ -444,6 +450,7 @@ body > .item2{
 
     .item2{
           height: 136vh;
+          display: contents;
     }
 
     .container{
@@ -475,6 +482,8 @@ body > .item2{
      overflow: auto;
      display: grid;
      justify-content: center;
+    border-collapse: collapse;
+  
    }
 
      .nav li ul {
@@ -496,24 +505,24 @@ body > .item2{
    }
 
     /* width -- this is for nav- scroll bar option*/
-    ::-webkit-scrollbar {
+     ::-webkit-scrollbar {
       width: 20px;
     }
 
     /* Track */
-    ::-webkit-scrollbar-track {
+     ::-webkit-scrollbar-track {
       box-shadow: inset 0 0 5px grey; 
       border-radius: 10px;
     }
      
     /* Handle */
-    ::-webkit-scrollbar-thumb {
+     ::-webkit-scrollbar-thumb {
       background: red; 
       border-radius: 10px;
     }
 
     /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
+     ::-webkit-scrollbar-thumb:hover {
       background: rgb(100%,0,0,0.6); 
     }
 
@@ -525,6 +534,76 @@ body > .item2{
     position: relative;
     box-shadow: inset 0 0 50px grey;
    }
+
+   
+   /*.hello , .container{
+    
+    display:grid;
+    grid-gap: 60px;
+    column-gap: 40px;
+   }*/
+
+
+   #loader {
+            border: 12px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 12px solid #444444;
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
+        }
+          
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+          
+   .center {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+    }
+
+
+    .animate-charcter
+    {
+       text-transform: uppercase;
+      background-image: linear-gradient( -225deg, #eddb03 0%, #d51026 29%, #f10808 67%, #fff800 100% );
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 2s linear infinite;
+      display: inline-block;
+      /*font-size: 190px;*/
+      position: relative;
+      bottom: 270px;
+      /*animation: bounce 2s infinite;*/
+      text-shadow: 3px 3px #e0da0d;
+      padding:16px;
+    }
+
+    @keyframes textclip {
+      to {
+        background-position: 200% center;
+      }
+    }
+    .gif{
+    display: grid;
+    position: relative;
+    height: 50px;
+    left: -151px;
+    border-radius: 50%;
+    bottom: -60px;
+    }
 
 }
 
