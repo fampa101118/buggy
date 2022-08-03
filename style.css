@@ -599,8 +599,8 @@ body > .item2{
     .gif{
     display: grid;
     position: relative;
-    height: 50px;
-    left: -151px;
+    height: 41px;
+    left: -125px;
     border-radius: 50%;
     bottom: -60px;
     }
