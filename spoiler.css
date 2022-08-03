@@ -1,12 +1,10 @@
 * {
-  /*box-sizing: border-box;*/
+  
   margin: 0;
   padding: 0;
 }
 
-/*html{
-  display: grid;
-}*/
+
 
 body{
 
@@ -16,6 +14,7 @@ body{
   width:100%;
     min-height: 70vh;
    background-color: rgba(33,34,35,255);
+   font-family: "Raleway",sans-serif;
 
 }
 
@@ -34,14 +33,7 @@ body{
 
 }
 
-.container{
-    display: inline-block;
-    /* background-size: cover; */
-    /* background-position: center; */
-/*    object-fit: cover;
-    text-align: -webkit-center;*/
-    margin:9px;
-}
+
 
 img{
     width: 100%;
@@ -53,6 +45,10 @@ img{
 
 
 .button{display:none;}
+
+.container{
+  display : none ;
+}
 
 @media only screen and (max-width: 700px){
 
@@ -92,6 +88,86 @@ img{
     width: 77px;
    
   }
+
+
+  /************ for comment section*/
+
+  .container {
+    display : grid;
+    max-width: 640px;
+    /*margin: 30px auto;*/
+    background:  #f41d1d;;
+    border-radius: 8px;
+    padding: 20px;
+    position: absolute;
+    bottom: 0px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .margin-bottom {
+    150px;
+  }
+
+  .comment {
+    display: block;
+    transition: all 1s;
+  }
+
+  .commentClicked {
+    min-height: 0px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 5px 10px
+  }
+
+  textarea {
+    width: 100%;
+    border: none;
+    background: #bff210;
+    padding: 5px 10px;
+    height: 50%;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 2px solid #016BA8;
+    transition: all 0.5s;
+    margin-top: 65px;
+    box-sizing: border-box;
+  }
+
+  button.primaryContained {
+    background: #3735ec;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    margin-top: 0px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+    transition: 1s all;
+    font-size: 10px;
+    border-radius: 5px;
+  }
+
+  button.primaryContained:hover {
+    background: #9201A8;
+  }
+
+ .container p{
+  font-size: 20px;
+  font-family: fantasy;
+ }
+
+
+  /************/
   
 
 }
+
+
+
+
+/*
+
+
+
