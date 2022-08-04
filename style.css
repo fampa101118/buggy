@@ -605,6 +605,34 @@ body > .item2{
     bottom: -60px;
     }
 
+   .summary{
+    display: grid;
+    max-width: 640px;
+    /* margin: 30px auto; */
+    background: no-repeat;
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+    bottom: 142px;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 22px;
+    margin-top: 0px;
+    /* position: sticky; */
+    margin-bottom: 114px;
+    background-image: url(summary.jpg);
+    background-position: center;
+    background-size: cover;
+   }
+
+   
+    .summary p {
+    word-spacing: 11px;
+    color: gold;
+    font-style: oblique;
+    }
+
+    
 }
 
 
